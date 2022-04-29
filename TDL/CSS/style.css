@@ -1,0 +1,368 @@
+/* RESET CSS */
+html , body  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul ,ol li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 20%);
+    z-index: 0;
+    opacity: 0;
+    transition: .3s ease-out;
+    pointer-events: none;
+}
+
+.loadingActive {
+    z-index: 100;
+    opacity: 1;
+}
+
+.loading .cricle {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 7px dashed #fff;
+    border-radius: 100%;
+    animation: loadingAuto 1.5s .3s cubic-bezier(.17,.37,.43,.67) infinite ;
+}
+
+@keyframes loadingAuto {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 10px;
+
+}
+.header .headerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.header .headerLogo .icon-header-logo {
+    margin-right: 10px;
+}
+.header .headerLogo img {
+    height: 30px;
+}
+
+.header .headerLogo a {
+    float: left;
+    margin-right: 10px;
+    color: black;
+}
+.header .searchBar {
+    margin: 0 10px;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    background: #f1f3f4;
+}
+.header .searchBar .fa-search {
+   position: absolute;
+   left: 519px;
+   top: 3%;
+   margin-right: 10px;
+}
+
+.header .searchBar .search-input {
+    height: 20px;
+    width: 929px;
+    border-radius: 12px;
+    position: relative;
+    border: none;
+    font-size: 13px;
+    outline: 0;
+    background-color: transparent;
+}
+
+
+.header .group-icons {
+    float: right;
+    list-style: none;
+}
+
+.header .group-icons .fa-th {
+    margin-right: 10px;
+}
+
+/* End Header */
+
+.nav-bar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10px;
+    background: #ec4d3d;
+}
+.nav-bar-top .nav-bar-mail {
+    font-size: 15px;
+}
+
+.nav-bar-top .nav-bar-mail a{
+    color: white;
+}
+
+.nav-bar-top .nav-bar-top-list {
+    display: flex;
+    align-items: center;
+}
+.nav-bar-top .nav-bar-top-list .nav-bar-items {
+    margin-left: 10px;
+
+}
+
+.nav-bar-top .nav-bar-top-list .nav-bar-items a {
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 70px;
+}
+
+/* // End Nav Bar */
+.main-content {
+    display: flex;
+}
+.main-content .nav-bar {
+    flex: 16%;
+    max-width: 16%;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    padding: 1.5rem 1rem 0 0;
+    height: 85vh;
+}
+
+.main-content .nav-bar .list-nav {
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+.main-content .nav-bar .list-nav .nav-items {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px 0px 10px 25px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.main-content .nav-bar .list-nav .nav-items:hover {
+    color: #d64f42;
+    background: #d64e4246;
+}   
+
+.main-content .nav-bar .active {
+    color: #d64f42;
+    background: #d64e4246;
+}   
+
+.main-content .nav-bar .list-nav .nav-items i {
+    margin-right: 10px;
+}
+
+.main-content .nav-bar .list-nav .nav-items .nav-link {
+    font-weight: bold;
+    font-size: 15px;
+    color: #222222;
+}
+
+.main-content .main-table {
+    flex: 83%;
+    max-width: 83%;
+}
+.main-content .main-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.main-content .main-table table thead {
+    border-bottom: 3px solid #d64f42;
+}
+
+/* .main-content .main-table table  thead tr {} */
+
+.main-content .main-table table  thead tr th {
+    font-size: 20px;
+    padding: 15px;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.main-content .main-table table  thead tr th:nth-child(1) {
+    width: 10%;
+}
+.main-content .main-table table  thead tr th:nth-child(2) {
+    width: 30%;
+}
+.main-content .main-table table  thead tr th:nth-child(3) {
+    width: 40%;
+}
+.main-content .main-table table  thead tr th:nth-child(3) {
+    width: 20%;
+}
+.main-content .main-table table  thead tr th:nth-child(3) {
+    width: 20%;
+}
+/* End Main Content */
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.activeModal {
+    z-index: 98;
+}
+
+
+.modal-form .main-modal {
+    flex-direction: column;
+    border-radius: 20px;
+    width: 15rem;
+    padding: 1rem 0rem;
+    background-color: #fff; 
+    transition: .2s ease-in-out;
+    transform: scale(0);
+}
+
+.modal-form .showMainModal {
+    transform: scale(1);
+}
+
+
+.modal-form .main-modal .fa-pencil{
+    font-size: 20px;
+    margin: 1rem 6rem 1.5rem;
+    color: #d64f42;
+    text-align: center;
+    
+}
+/* .modal-form .main-modal .group{
+    
+} */
+.modal-form .main-modal .group h3 {
+    font-size: 25px;
+    text-align: left;
+}
+
+.modal-form .main-modal .group input {
+    border: none;
+    font-size: 1rem;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.modal-form .main-modal .group-submit {
+    margin-left: 10px;
+}
+
+.modal-form .main-modal .group-submit button {
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    margin: 0px 3px;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.modal-form .main-modal .group-submit #btn-add {
+    background-color: rgb(59, 165, 59);
+    
+}
+.modal-form .main-modal .group-submit #btn-cancel {
+    background-color: rgb(218, 69, 32);
+}
+
+ .btn-add {
+     position: fixed;
+     bottom: 10%;
+     right: 5%;
+    background-color: #d64f42;
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+
+ .overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgb(0, 0, 0, .5);
+     z-index: 0;
+     opacity: 0;
+ }
+
+ .classShowOver {
+     z-index: 97;
+     opacity: 1;
+ }
+
+
+ .btn-scroll {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+   background-color: green;
+   padding: 20px;
+   color: #ffffff;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   cursor: pointer;
+  opacity: 0;
+ }
+
+
+.activeScroll {
+    opacity: 1;
+}

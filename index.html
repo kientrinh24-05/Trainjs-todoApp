@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./TDL/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>  
+        <div class="loading">
+            <div class="cricle"></div>
+        </div>
+        <div class="header">
+            <div class="headerLogo">
+                <span class="icon-header-logo"><i class="fa fa-bars" aria-hidden="true"></i></span>   
+                <img src="./TDL/IMG/gmail-logo.png" alt="">  
+            </div>
+            <div class="searchBar">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Search" class="search-input">     
+            </div>
+            <div class="group-icons">
+                <i class="fa fa-th" aria-hidden="true"></i>
+                <i class="fa fa-server nav__btn--i" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="nav-bar-top">
+                <div class="nav-bar-mail">
+                    <span><a href=""><i class="fa-solid fa-arrow-left"></i>Mail</a></span>
+                </div>
+                <ul class="nav-bar-top-list">
+                    <li class="nav-bar-items"><a href="https://mail.google.com/"><i class="fa-brands fa-google"></i></a></li>                 
+                    <li class="nav-bar-items"><a href="https://cloud.google.com/"><i class="fa-solid fa-cloud-arrow-down"></i></a></li>
+                    <li class="nav-bar-items"><a href="https://mail.google.com/"><i class="fa-brands fa-old-republic"></i></a></li>
+                    <li class="nav-bar-items"><a href="https://mail.google.com/"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>     
+                </ul>
+            </div>
+            <div class="main-content">
+                <div class="nav-bar">
+                    <ul class="list-nav">
+                        <li class="nav-items"><i class="fa-solid fa-image"></i><a href="" class="nav-link">Started</a></li>
+                        <li class="nav-items"><i class="fa fa-star" aria-hidden="true"></i></i> <a href="" class="nav-link">Snoozed</a></li>
+                        <li class="nav-items"><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="" class="nav-link">Sent</a></li>
+                        <li class="nav-items"><i class="fa fa-file" aria-hidden="true"></i><a href="" class="nav-link">Draf</a></li>
+                        <li class="nav-items"><i class="fa fa-comments" aria-hidden="true"></i><a href="" class="nav-link">Note</a></li>
+                    </ul>
+                </div>
+                
+                <div class="main-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="id">ID</th>
+                                <th class="mail">Mail</th>
+                                <th class="des">Desciption</th>
+                                <th class="author">Author</th>
+                                <th class="action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tableBody">
+                                <tr>
+                                    <!-- <td>1</td>
+                                    <td>thienan@gmail.com</td>
+                                    <td>thiena.</td>
+                                    <td>thienanil.com</td> -->
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="modal-form d-flex">
+            <div class="main-modal d-flex">
+                <i class="fa-solid fa-pencil"></i>
+                <div class="group">
+                    <h3>Mail</h3>
+                    <input type="text" placeholder="Mail" id="mail">
+                </div><br>
+                <div class="group">
+                    <h3>Description</h3>
+                    <input type="text" placeholder="Desciption" id="des">
+                </div><br>
+                <div class="group">
+                    <h3>Author</h3>
+                    <input type="text" placeholder="Author" id="author">
+                </div><br>
+                    
+                <div class="group-submit">
+                    <button id="btn-add" onclick="addData()">Add</button>
+                    <button id="btn-cancel">Cancel</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="section padding-top-bottom over-hide background-dark z-bigger-2">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-7 text-center">
+                  <a href="#" class="hover-target">
+                    <div class="project-link-wrap">
+                      <p><i class="fa fa-arrow-up" aria-hidden="true"></i></p>
+                    </div>
+                  </a>
+                </div>
+              </div>	
+            </div>			
+          </div>
+        <div class="btn-add d-flex">
+            <span>Add</span>
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </div>
+
+        <div class="btn-scroll d-flex">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+
+
+    
+    
+    
+    
+   <script src="./TDL/JS/main.js"></script>
+</body>
+</html>
